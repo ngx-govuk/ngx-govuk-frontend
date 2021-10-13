@@ -6,8 +6,8 @@ import { By } from '@angular/platform-browser';
 import { ConditionalContentDirective } from '../directives';
 import { ErrorMessageComponent } from '../error-message/error-message.component';
 import { FieldsetDirective, FieldsetHintDirective, LegendDirective } from '../fieldset';
-import { RadioOptionComponent } from './radio-option/radio-option.component';
 import { RadioComponent } from './radio.component';
+import { RadioOptionComponent } from './radio-option/radio-option.component';
 
 describe('RadioComponent', () => {
   @Component({

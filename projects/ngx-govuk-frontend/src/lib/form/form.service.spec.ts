@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { FormArray, FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NgxGovukFrontendModule } from '../ngx-govuk-frontend.module';
 
+import { NgxGovukFrontendModule } from '../ngx-govuk-frontend.module';
 import { FormService } from './form.service';
 
 describe('FormService', () => {

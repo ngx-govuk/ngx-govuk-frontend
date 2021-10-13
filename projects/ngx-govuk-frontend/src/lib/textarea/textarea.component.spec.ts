@@ -3,7 +3,6 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule, By } from '@angular/platform-browser';
 
-import { FormErrorDirective } from '../directives';
 import { ErrorMessageComponent } from '../error-message/error-message.component';
 import { GovukValidators } from '../error-message/govuk-validators';
 import { NgxGovukFrontendModule } from '../ngx-govuk-frontend.module';

@@ -2,7 +2,8 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "npm"
+    "packageManager": "npm",
+    "defaultCollection": "@angular-eslint/schematics"
   },
   "newProjectRoot": "projects",
   "projects": {
@@ -40,6 +41,15 @@
             "main": "projects/ngx-govuk-frontend/src/test.ts",
             "tsConfig": "projects/ngx-govuk-frontend/tsconfig.spec.json",
             "karmaConfig": "projects/ngx-govuk-frontend/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ngx-govuk-frontend/**/*.ts",
+              "projects/ngx-govuk-frontend/**/*.html"
+            ]
           }
         }
       }
