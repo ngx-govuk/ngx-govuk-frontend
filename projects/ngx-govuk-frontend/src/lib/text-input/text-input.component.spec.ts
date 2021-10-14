@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
+
 import { GovukValidators } from '../error-message/govuk-validators';
 import { NgxGovukFrontendModule } from '../ngx-govuk-frontend.module';
 import { TextInputComponent } from './text-input.component';
@@ -131,7 +132,6 @@ describe('TextInputComponent', () => {
   });
 
   it('should display errors on submission', async () => {
-    const element: HTMLElement = fixture1.nativeElement;
     const formControl = fixture1.debugElement.query(By.css('input[name="text"]'));
     formControl.triggerEventHandler('input', { target: { value: 'abc' } });
     formControl.triggerEventHandler('blur', { target: { value: 'abc' } });

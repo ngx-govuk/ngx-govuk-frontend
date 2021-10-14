@@ -40,7 +40,7 @@ export class FileUploadComponent extends FormInput implements ControlValueAccess
     this.control.patchValue((event?.target as HTMLInputElement)?.files);
   }
 
-  writeValue(_: any): void {}
+  writeValue(): void {}
 
   registerOnChange(onChange: any): void {
     this.onChange = onChange;

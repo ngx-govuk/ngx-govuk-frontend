@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Directive, Input, OnChanges, SimpleChanges, TemplateRef } from '@angular/core';
+import { ChangeDetectorRef, Directive, Input, OnChanges, TemplateRef } from '@angular/core';
 
 import { BehaviorSubject } from 'rxjs';
 
